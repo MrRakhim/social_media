@@ -45,22 +45,6 @@ app.get('/getPeople', async (req, res) => {
 			return res.json(error);
 		});
 
-		// results = results.map(i => ({
-		// 	gender: i.gender, 
-		// 	fullname: `${i.name.title} ${i.name.first} ${i.name.last}`,
-		// 	city: i.location.city,
-		// 	country: i.location.country,
-		// 	email: i.email,
-		// 	account: { 
-		// 		username: i.login.username, 
-		// 		password: i.login.password
-		// 	},
-		// 	phone: i.phone,
-		// 	picture: i.picture.large,
-		// 	nationality: i.nat
-		// }))
-
-		
 
 	} catch (error) {
 		return res.status(400).json(error);
